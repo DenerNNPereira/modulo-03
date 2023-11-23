@@ -1,6 +1,6 @@
-body {
+/* body {
     background-image: url(imagens/imagens-cap19/wallpaper001.jpg);
-}
+} */
 
 div.quadrado {
     display: inline-block;
@@ -21,4 +21,21 @@ div#q2 {
 
 div#q3 {
     background-image: url(imagens/imagens-cap19/pattern003.png);
+}
+
+div.retangulo {
+    display: inline-block;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: gray;
+    width: 600px;
+    height: 600px;
+}
+
+div#r1 {
+    background-image: url(https://raw.githubusercontent.com/gustavoguanabara/html-css/master/imagens/mascote.png);
+    background-size: 100px 100px;
+    /* background-repeat: no-repeat; */
+    /* background-repeat: repeat-x; */
+    background-repeat: repeat-y;
 }
