@@ -2,6 +2,10 @@
     background-image: url(imagens/imagens-cap19/wallpaper001.jpg);
 } */
 
+body {
+    padding: 25px;
+}
+
 div.quadrado {
     display: inline-block;
     border: 2px solid black;
@@ -38,4 +42,148 @@ div#r1 {
     /* background-repeat: no-repeat; */
     /* background-repeat: repeat-x; */
     background-repeat: repeat-y;
+}
+
+div.bloco {
+    background-image: url(imagens/imagens-cap19/wallpaper002.jpg);
+    height: 200px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+div#b1 {
+    background-position: left top;
+}
+div#b2 {
+    background-position: left center;
+}
+div#b3 {
+    background-position: right bottom;
+}
+div#b4 {
+    background-position: center center;
+}
+
+div.bloco2 {
+    height: 80vh;
+    border: 1px dashed black;
+    background-image: url(https://raw.githubusercontent.com/gustavoguanabara/html-css/master/imagens/mascote.png);
+    background-size: 100px;
+    background-repeat: no-repeat;
+    background-position: right center;
+}
+
+div.bloco3 {
+    display: inline-block;
+    height: 860px;
+    border: 1px dashed black;
+    background-image: url(imagens/imagens-cap19/wallpaper003.jpg);
+    background-repeat: no-repeat;
+}
+
+div#p2 {
+    height: 285px;
+    width: 427px;
+    background-position: left top;
+}
+div#p3 {
+    height: 285px;
+    width: 427px;
+    background-position: center top;
+}
+div#p4 {
+    height: 285px;
+    width: 427px;
+    background-position: right top;
+}
+
+div#p5 {
+    height: 285px;
+    width: 427px;
+    background-position: left center;
+}
+div#p6 {
+    height: 285px;
+    width: 427px;
+    background-position: center center;
+}
+div#p7 {
+    height: 285px;
+    width: 427px;
+    background-position: right center;
+}
+
+div#p8 {
+    height: 285px;
+    width: 427px;
+    background-position: left bottom;
+}
+div#p9 {
+    height: 285px;
+    width: 427px;
+    background-position: center bottom;
+}
+div#p10 {
+    height: 285px;
+    width: 427px;
+    background-position: right bottom;
+}
+
+div#bloco4 {
+    height: 100vh;
+    border: 1px solid blue;
+    background-color: black;
+    background-image: url(imagens/imagens-cap19/wallpaper003.jpg);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+}
+main#bloco5 {
+    background-color: white;
+    width: 400px;
+    padding: 10px;
+    margin: auto;
+    border: 1px solid darkblue;
+    border-radius: 15px;
+}
+
+div#bloco6 {
+    height: 1100px;
+    border: 1px solid green;
+    /* background-color: black;
+    background-image: url(imagens/imagens-cap19/wallpaper003.jpg);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    background-attachment: fixed; */
+    background: black url('imagens/imagens-cap19/wallpaper003.jpg') center center no-repeat fixed;
+    background-size: cover;
+}
+main#bloco7 {
+    background-color: antiquewhite;
+    width: 400px;
+    padding: 10px;
+    margin: auto;
+    border: 1px solid darkblue;
+    border-radius: 15px;
+}
+
+#container {
+    background-image: url(imagens/imagens-cap19/target001.png);
+    background-size: 100% 100%;
+    position: relative;
+    height: 96vh;
+    padding: 10px;
+    background-color: green;
+}
+#conteudo {
+    background-image: url(imagens/imagens-cap19/target001.png); background-size: 100% 100%;
+    position: absolute;
+    height: 200px;
+    width: 400px;
+    background-color: yellow;
+    right: 50%;
+    bottom: 50%;
+    transform: translate(50%, 50%);
 }
