@@ -192,16 +192,234 @@
 
     <hr><br>
     <h1>hospedando o projeto cordel gratuitamente. aula 07 capítulo 20 módulo 03</h1>
-    <p></p>
-
-    <hr><br>
-    <h1>aula 06 capítulo 20 módulo 03</h1>
-    <p></p>
-
+    <p>criar um novo repositório e colcoar apenas os arquivos a serem publicados, caso a pasta de arquivos tenha algum arquivo que não precisa ser publicado. ao criar o repositório não deixar privado, deixar público, desmarcar o iniciar com readme. salvar e push para enviar pro github. no site do github, abrir o repositório clicar em settings, ir até a aba  github pages e marcar "master branch". com o endereço que vai aparecer na tela acessar o site publicado</p>
 
     <hr><hr>
     <br><br>
-    <h1>aula 01 capítulo 20 módulo 03</h1>
+
+    <hr><hr>
+    <br><br>
+    <h1>ainda podemos usar tabelas em html? aula 01 capítulo 21 módulo 03</h1>
+    <p>não se usa tabela para construir um site layout do site, se usa uma tabela para complementar um site apresentando dados de forma tabular.</p>
+    
+    <hr><br>
+    <h1>sua primeira tabela em html. aula 02 capítulo 21 módulo 03</h1>
+    <p>hierarquia de tabelas simples: tag table = tabela; dentro da tag table tem a table row = linha de tabela; dentro da table row tem a table header = cabelçalho de tabela e a table data = dado de tabela. por padrão as cédulas da tabela tem uma distância entre elas, para remover usar: border-collapse: collapse; no seletor table. pode usar classes nas linhas, colunas ou na própria tabela. pode usar o seletor das tags table, tr ou td. ajustar tamanho com width ou height ou ambos. pode ajustar margem ou background</p>
+    <p>não é obrigatório fechar tr ou dt de acordo com o w3c. qual dado dentro da tabela porém fora de uma tr ou td não será apresentado dentro da tabela, será apresentado antes ou após a tabela.</p>
+    <table> <!-- criação da tabela -->
+        <tr> <!-- primeira linha -->
+            <td>A1</td> <!-- primeiro dado -->
+            <td>A2</td> <!-- segundo dado -->
+            <td>A3</td> <!-- terceiro dado -->
+            <td>A4</td> <!-- quarto dado -->
+            <td>A5</td> <!-- quinto dado -->
+            <td>A6</td> <!-- sexto dado -->
+        </tr> <!-- fechamento da tr, tabela linha table row, é opcional -->
+        <tr class="linha"> <!-- segunda linha -->
+            <td>B1</td> <!-- primeiro dado -->
+            <td>B2</td> <!-- segundo dado -->
+            <td>B3</td> <!-- terceiro dado -->
+            <td>B4</td> <!-- quarto dado -->
+            <td>B5</td> <!-- quinto dado -->
+        </tr>
+        <tr> <!-- terceira linha -->
+            <td>C1</td> <!-- primeiro dado -->
+            <td>C2</td> <!-- segundo dado -->
+            <td>C3</td> <!-- terceiro dado -->
+            <td>C4</td> <!-- quarto dado -->
+        </tr>
+        <tr> <!-- quarta linha -->
+            <td>D1</td> <!-- primeiro dado -->
+            <td class="dado">D2</td> <!-- segundo dado -->
+            <td>D3</td> <!-- terceiro dado -->
+        </tr>
+        <tr> <!-- quinta linha -->
+            <td>E1</td> <!-- primeiro dado -->
+            <td>E2</td> <!-- segundo dado -->
+        </tr>
+        <tr> <!-- sexta linha -->
+            <td>F1</td> <!-- primeiro dado -->
+        </tr>
+    </table>
+
+    <hr><br>
+    <h1>alinhando o conteúdo em tabelas. aula 03 capítulo 21 módulo 03</h1>
+    <p>no seletor td no css, para alinhar o texto  usar: text-align: valor; onde valor pode ser center centro, left esquerda, rigth direita, para alinhamento horizontal. para alinhamento vertical usar: vertical-align: valor; onde valor pode ser: top topo, bottom abaixo e middle meio.</p>
+    <p>pode configurar uma parte da tabela para alinha de uma forma e o restante de outra forma usando classes ou seletores específicas</p>
+    <table> <!-- criação da tabela -->
+        <tr> <!-- primeira linha -->
+            <td>A1</td> <!-- primeiro dado -->
+            <td>A2</td> <!-- segundo dado -->
+            <td>A3</td> <!-- terceiro dado -->
+        </tr>
+        <tr> <!-- segunda linha -->
+            <td>B1</td> <!-- primeiro dado -->
+            <td class="numero">B2</td> <!-- segundo dado -->
+            <td>B3</td> <!-- terceiro dado -->
+        </tr>
+        <tr> <!-- terceira linha -->
+            <td>C1</td> <!-- primeiro dado -->
+            <td class="numero">C2</td> <!-- segundo dado -->
+            <td>C3</td> <!-- terceiro dado -->
+        </tr>
+        <tr> <!-- quarta linha -->
+            <td>D1</td> <!-- primeiro dado -->
+            <td>D2</td> <!-- segundo dado -->
+            <td class="numero">D3</td> <!-- terceiro dado -->
+        </tr>
+    </table>
+
+    <hr><br>
+    <h1>aprendendo a trabalhar com tabelas grandes. aula 04 capítulo 21 módulo 03</h1>
+    <p>anatomia de tabelas grandes: table = tabela; thead = cabeçalho da tabela que pode conter: tr table row linha da tabela, td table dada, dados da tabela e th table title título da tabela; tbody que é o conteúdo da tabela corpo da tabela que pode conter tr, td e th; tfoot table foot pé da tabela rodapé que pode conter tr, td e th.</p>
+    <p>por padrão o thead e tfoot é em negrito e centralizado na horizontal, porém pode depender do navegador. pela semântica tbody, thead e tfoot não tem destinção de posição dentro da tabela ao digitar o html, pois será exibido na ordem correta pelo navegador. pode usar tag strong em algum dado de uma tabela. definir bem o escopo do th. manter sempre a semântica.</p>
+    <p>anatomia da tabela
+    table:
+        thead;
+            tr td th
+        tbody;
+            tr td th
+        tfoot;
+            tr td th
+    </p>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Estado</th>
+                <th>População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45 919 049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21 168 791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17 264 943</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>Total de Habitantes</th>
+                <td class="num">000000</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <hr><br>
+    <h1>caption e escopo de títulos em tabelas. aula 05 capítulo 21 módulo 03</h1>
+    <p>ca´ption em tabelas é como se fosse uma legenda da tabela, sempre vai aparecer acima do header, não usa td, th ou tr e aceita configurações no seletor css,</p>
+    <p>escopo scope diz qual direção vem os dados da tabela td relativo aos títulos da tabela th. no exemplo abaixo os th "estado" e "População" são títulos e seus td seguem de acordo com a coluna abaixo do th. no exemplo abaixo o th "Total de Habitantes" é um título e seus td seguem de acordo com a linha ao lado do td. é muito importante para mecanismos de busca e visualmente o site não é alterado, porém facilitando e dando preferência a tabela do site em mecanismos de buscas pois melhora a semântica das informações e títulos.</p>
+    <p>pode alterar o tamanho de uma coluna inline, pontual, adicionando a configuração style diretamente na tag th que alterará a coluna por completo. no exemplo style="width: 50px;" fez com que a largura da coluna th "População" tivesse 50 pixels, como a configuração da tabela table no seletor css a largura dessa tabela é 500 pixels o restante da tabela terá 500 menos 100 = 400 pixels para a coluna th "Estado"</p>
+    <p>anatomia da tabela atualizada
+        caption
+        table:
+            thead;
+                tr td th
+            tbody;
+                tr td th
+            tfoot;
+                tr td th
+        </p>
+        <table>
+            <caption>População das Unidades Federativas</caption>
+            <thead>
+                <tr>
+                    <th scope="col">Estado</th>
+                    <th scope="col" style="width: 100px;">População</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>São Paulo</td>
+                    <td class="num">45 919 049</td>
+                </tr>
+                <tr>
+                    <td>Minas Gerais</td>
+                    <td class="num">21 168 791</td>
+                </tr>
+                <tr>
+                    <td>Rio de Janeiro</td>
+                    <td class="num">17 264 943</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th scope="row">Total de Habitantes</th>
+                    <td class="num">000000</td>
+                </tr>
+            </tfoot>
+        </table>
+
+    <hr><br>
+    <h1>efeito zebrado na tabela com html e css. aula 06 capítulo 21 módulo 03</h1>
+    <p>para aplicar o efeito zebrado nas tabelas, no seletor do corpo, body da tabela no css selecionar o tbody e todas as tr imediatamente filhas > do tbody seguidas de uma pseudo-classe com dois pontos : mais nth-child(2n) abre colchetes e adiciona a configuração, no caso, background-color e fecha colchetes, onde (2n) significa de 2 em 2, seleciona 1  e pula a seguinte e seleciona a seguinte, se for 5n, o sistema faz uma contagem, conta de 1 a 5 e na quinta adiciona a configuração, conta mais 5 e na quinta adiciona a configuração: tbody > tr:nth(2n) {background-color: lightgray;} . usando (2n) se quiser inverter pode adicionar -1 ficando (2n-1) para a contagem iniciar negativa ou, no lugar de (2n) pode usar a seleção de par even ou ímpar odd (even) ou (odd). no caso de usar odd ou even pode configurar um seletor para cada um e sussessivamente uma cor para cada, ou ainda em caso de 2 seletores, (2n) e (2n-1) em cada seletor, assim cada linha terá uma configuração específica para se identificar cada linha, principalmente em casos de tabelas maiores, com muitas colunas, linhas e dados.</p>
+
+    <table>
+        <caption>População das Unidades Federativas</caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 100px;">População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45 919 049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21 168 791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17 264 943</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num">12 258 973</td>
+            </tr>
+            <tr>
+                <td>Espírito Santo</td>
+                <td class="num">7 547 214</td>
+            </tr>
+            <tr>
+                <td>Amazonas</td>
+                <td class="num">4 587 124</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso</td>
+                <td class="num">7 471 412</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Total de Habitantes</th>
+                <td class="num">000000</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <hr><br>
+    <h1>cabeçalho fixo em tabelas grandes. aula 07 capítulo 21 módulo 03</h1>
+    <p></p>
+
+    <hr><br>
+    <h1>aula 01 capítulo 21 módulo 03</h1>
+    <p></p>
+
+    <hr><hr>
+    <br><br>
+    <h1>aula 01 capítulo 21 módulo 03</h1>
     <p></p>
 </body>
 </html>
+denernelsom@gmail.com
+madmaxLASTV8*
