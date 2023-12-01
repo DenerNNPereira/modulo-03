@@ -217,14 +217,14 @@ td.dado {
 } */
 
 /* configurações da tabela grande aula 04 capítulo 21 módulo 03  */
-table {
+/* table {
     width: 500px;
     border-collapse: collapse;
-}
+} */
 /* tbody > tr:nth-child(2n) {
     background-color: lightgray;
 } */
-tbody > tr:nth-child(odd) {
+/* tbody > tr:nth-child(odd) {
     background-color: lightgreen;
 }
 tbody > tr:nth-child(even) {
@@ -248,4 +248,32 @@ caption {
     font-weight: bold;
     padding: 10px;
     background-color: aliceblue;
+} */
+
+/* configurações para que a tabela fique com o cabeçalho colado no topo da tela quando rolagem
+
+table {
+    width: 500px;
+    border-collapse: collapse;
+    position: relative;
+}
+
+thead > tr > th {
+    position: sticky;
+    top: -1px;
+    background-color: gray;
+} */
+
+
+/* tabelas com row e col */
+
+table {
+    border-collapse: collapse;
+    width: 300px;
+}
+
+td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
 }
