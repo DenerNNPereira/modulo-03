@@ -5,6 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>anotações do mõdulo 03</title>
+    <style>
+        .cnome {
+            background-color: blue;
+            color: white;
+        }
+        .cidade {
+            background-color: green;
+            color: blue;
+        }
+    </style>
 </head>
 <body>
     <hr><hr>
@@ -576,16 +586,69 @@
     <p>tem como definir o escopo em grupo, separados por grupo de linhas rowgroup e por grupo de colunas colgroup. separar o escopo, tipo de cada dado vindo de um th: scope="col" scope="row" scope="colgroup" scope="rowgroup"</p>
 
     <br><br>
-    <h1>aula 01 capítulo 21 módulo 03</h1>
-    <p></p>
+    <h1>desafios (parte 2). aula 12 capítulo 21 módulo 03</h1>
+    <p>feito no arquivo desafiotabela2.html</p>
+    <p>criar a tabela, diferenciar th, td e tr. definir cabeçalho e corpo. definir colspan e rowspan. identificar onde é o scopo de cada th ou dado</p>
 
     <hr><br>
-    <h1>aula 01 capítulo 21 módulo 03</h1>
-    <p></p>
+    <h1>agrupando colunas com colgroup. aula 13 capítulo 21 módulo 03</h1>
+    <p>para se destacar uma linha basta usar um seletor tr ou classe em um seletor tr e no css alterar ou adicionar alguma configuração que diferencie esta linha das outras. o mesmo não funciona se o detaque é para colunas, sendo necessário para tal, outro tipo de procedimento. para selecionar uma coluna inteira usar a tag colgroup dentro da tabela table antes co caption ou thead, com a quantidade de colunas da tabela e cada um com uma classe específica para cada coluna que diferencie uma das outras, depois no css usar o seletor com class para configurar o destaque de cada coluna. no colgroup a col que tiver um span com algum valor maior que 1 usará o destaque em mais de uma coluna conforme o valor definido em span.</p>
+
+    <h1>Exercício de Tabela</h1>
+
+    <table>
+        <colgroup>
+            <col class="cnome" span="2">
+            <!-- <col class="csexo"> -->
+            <col class="cidade">
+            <col class="cprof">
+        </colgroup>
+        <caption>Cadastro</caption>
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissão</th>
+        </tr>
+        <tr>
+            <td>Nome1</td>
+            <td>X</td>
+            <td>01</td>
+            <td>Profissão</td>
+        </tr>
+        <tr>
+            <td>Nome2</td>
+            <td>X</td>
+            <td>01</td>
+            <td>Profissão</td>
+        </tr>
+        <tr>
+            <td>Nome3</td>
+            <td>X</td>
+            <td>01</td>
+            <td>Profissão</td>
+        </tr>
+        <tr>
+            <td>Nome4</td>
+            <td>X</td>
+            <td>01</td>
+            <td>Profissão</td>
+        </tr>
+        <tr>
+            <td>Nome5</td>
+            <td>X</td>
+            <td>01</td>
+            <td>Profissão</td>
+        </tr>
+    </table>
 
     <br><br>
-    <h1>aula 01 capítulo 21 módulo 03</h1>
-    <p></p>
+    <h1>tabelas responsivas. aula 14 capítulo 21 módulo 03</h1>
+    <p>uma tabela table pode ser envelopada ou criada dentro de uma div que usando um seletor no css adicionar a configuração overflow, coisa ou conteúdo que transborda, que pode ser direcionada ao eixo x ou y ou ambos. tem as opções auto, hidden e scroll. auto adiciona uma rolagem apenas na tabela que está dentro da div, tanto quanto scroll. hidden faz o conteúdo que não cabe na tela não ser visível nem rolável</p>
+
+    <br><br>
+    <h1>fim do módulo 03</h1>
+    <p>módulo 03 capítulo 21 finalizado. teste de perguntas e respostas 100% certo.</p>
 </body>
 </html>
 denernelsom@gmail.com
